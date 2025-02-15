@@ -1,0 +1,196 @@
+/* General Styles */
+body {
+    font-family: 'League Spartan', sans-serif;
+    background-color: #f4f7fc;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER */
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f9fa;
+    padding: 10px 20px;
+    border-bottom: 1px solid black;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
+.navbar-start, .navbar-end {
+    display: flex;
+    align-items: center;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.menu-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    top: 40px;
+    left: 0;
+    z-index: 1;
+}
+
+.dropdown-menu li {
+    padding: 10px;
+}
+
+.dropdown-menu a {
+    text-decoration: none;
+    color: black;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.logo {
+    height: 32px;
+    margin-right: 8px;
+}
+
+.nav-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.contact-button {
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+    .menu-button {
+        display: block;
+    }
+    .nav-links, .contact-button {
+        display: none;
+    }
+}
+
+h1 {
+    margin: 0;
+}
+
+.main-content {
+    width: 100%;
+    max-width: 1200px; /* Optional: Limits the width on larger screens */
+    margin: 0 auto; /* Centers the content horizontally */
+    padding: 40px 20px;
+    background-color: #ffffff;
+}
+
+.intro {
+    max-width: 900px; /* Ensures content doesn't stretch too wide */
+    margin: 0 auto 30px auto; /* Centers the sections and adds margin between them */
+    text-align: center;
+}
+
+.news-article {
+    text-align: left; /* Membuat teks rata kiri */
+    padding: 0 20px; /* Memberikan jarak pada konten */
+}
+
+.intro h2, .news-article h2 {
+    font-size: 28px;
+    color: #2c3e50;
+}
+
+.intro p, .news-article p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    margin: 20px 0;
+}
+
+
+/* FOOTER */
+.footer {
+    width: 100%; /* Ensures it takes full width */
+    margin: 0 auto; /* Centers the footer */
+    background-color: #1a202c;
+    color: #e2e8f0;
+    text-align: center;
+    padding: 20px 0px;
+    border-top: 1px solid #4a5568;
+    font-family: Arial, sans-serif;
+}
+
+.footer-nav, .footer-socials {
+    margin-bottom: 15px;
+}
+
+/* Footer social icons */
+.social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icon svg {
+    width: 24px;
+    height: 24px;
+    fill: #e2e8f0;
+    transition: fill 0.3s;
+}
+
+.social-icon svg:hover {
+    fill: #fbbf24;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .intro h2, .news-article h2 {
+        font-size: 24px;
+    }
+
+    .intro p, .news-article p {
+        font-size: 16px;
+    }
+}
